@@ -1,15 +1,10 @@
-package hello.hellospring.repository;
+package hello.hellospring.controller.repository;
 
 import hello.hellospring.domain.Member;
-import org.junit.jupiter.api.AfterEach;
 
 import java.util.*;
 
-import static java.util.Optional.*;
-
 public class MemoryMemberRepository implements MemberRepository {
-
-
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
